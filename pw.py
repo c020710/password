@@ -5,7 +5,11 @@ while i > 0:
 	if x == password:
 		print('Logged in succcessfully')
 		break
-	else:
+	elif x != password:
 		i = i - 1
-		print(i, 'times remaining')
-		#test
+		if i > 1:
+			print(i, 'times remaining')
+		elif i == 1:
+			print('LAST CHANCE')
+		else:
+			print('ACCOUNT LOCKED')
